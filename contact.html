@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Rise Clothes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-menu">
+            <a href="index.html" class="logo">RISE</a>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="lookbook.html">Лукбук</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="sizing.html">Предзаказ</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-intro">
+            <h1>Contact</h1>
+            <p>Вопросы по размеру, срокам или конкретной вещи — пишите напрямую или оставьте заявку ниже. Отвечаем в течение дня.</p>
+        </section>
+
+        <section class="contact-grid">
+
+            <div class="contact-info">
+                <h2>Как с нами связаться</h2>
+                <ul class="contact-list">
+                    <li>
+                        <span class="label">WhatsApp</span>
+                        <a class="value" href="https://wa.me/77771234567">+7 777 123 45 67</a>
+                    </li>
+                    <li>
+                        <span class="label">Telegram</span>
+                        <a class="value" href="https://t.me/riseclothes">@riseclothes</a>
+                    </li>
+                    <li>
+                        <span class="label">Email</span>
+                        <a class="value" href="mailto:hello@riseclothes.kz">hello@riseclothes.kz</a>
+                    </li>
+                    <li>
+                        <span class="label">Город</span>
+                        <span class="value">Астана, Казахстан</span>
+                    </li>
+                </ul>
+
+                <table class="hours-table">
+                    <tr><td>Пн–Пт</td><td>10:00–20:00</td></tr>
+                    <tr><td>Сб</td><td>11:00–18:00</td></tr>
+                    <tr><td>Вс</td><td>только онлайн-заявки</td></tr>
+                </table>
+
+                <div class="socials">
+                    <a href="#">Instagram</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">Telegram-канал</a>
+                </div>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <h2>Оставить заявку</h2>
+                <p>Расскажите, что интересует — подберём размер и уточним срок предзаказа.</p>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="contact">Telegram или телефон</label>
+                        <input type="text" id="contact" name="contact" placeholder="@username или +7 ...">
+                    </div>
+                    <div class="form-field">
+                        <label for="category">Категория</label>
+                        <select id="category" name="category">
+                            <option value="glasses">Очки</option>
+                            <option value="jackets">Куртки</option>
+                            <option value="knitwear">Трикотаж</option>
+                            <option value="shoes">Обувь</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" placeholder="Модель, размер, вопросы по срокам"></textarea>
+                </div>
+
+                <button type="submit" class="btn">Отправить заявку</button>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Rise Clothes — учебный проект. Front-End Assignment #1, AstanaITUniversity.</p>
+        <p>Команда: Sanzhar Kadyrov 1, Akarys Serikkazy 2, Nurasyl Yergazy 3</p>
+    </footer>
+
+</body>
+</html>

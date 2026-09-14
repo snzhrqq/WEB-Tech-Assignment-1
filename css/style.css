@@ -1,4 +1,4 @@
-/* ===== Design tokens — светлый минимализм, чёрный/белый ===== */
+
 
 :root {
     --bg: #FFFFFF;
@@ -8,7 +8,7 @@
     --line: #0A0A0A;
 }
 
-/* ===== 1. Сброс и базовые стили ===== */
+
 
 * {
     margin: 0;
@@ -61,7 +61,7 @@ ul {
     list-style: none;
 }
 
-/* ===== 2. Навигация ===== */
+
 
 .nav-menu {
     display: flex;
@@ -98,7 +98,7 @@ ul {
     text-underline-offset: 4px;
 }
 
-/* ===== 3. Hero — фото-слайдшоу на чистом CSS ===== */
+
 
 .hero-slideshow {
     position: relative;
@@ -171,7 +171,7 @@ ul {
     color: var(--text);
 }
 
-/* ===== 4. Категории ===== */
+
 
 .categories {
     padding: 3rem;
@@ -193,7 +193,7 @@ ul {
     color: var(--text-soft);
 }
 
-/* ===== 5. Masonry-сетка товаров ===== */
+
 
 .featured {
     padding: 3rem;
@@ -244,7 +244,7 @@ ul {
     border-top: 2px solid var(--line);
 }
 
-/* ===== 6. Страница About ===== */
+
 
 .page-header {
     padding: 4rem 3rem 2.5rem;
@@ -277,7 +277,7 @@ ul {
     padding: 1.5rem;
 }
 
-/* Фото основателя — намеренно БЕЗ скругления, прямые углы */
+
 .founder-photo {
     width: 140px;
     height: 140px;
@@ -297,7 +297,7 @@ ul {
     text-align: center;
 }
 
-/* Круглое фото — единственный обязательный border-radius:50% на весь сайт */
+
 .team-photo {
     width: 140px;
     height: 140px;
@@ -307,7 +307,6 @@ ul {
     filter: grayscale(100%);
 }
 
-/* ===== 7. Футер ===== */
 
 footer {
     padding: 2rem 3rem;
@@ -322,4 +321,331 @@ footer {
 footer p {
     color: var(--text-soft);
     margin-bottom: 0.3rem;
+}
+
+/* ===== 8. Общий интро-блок (catalog/lookbook/sizing/contact) ===== */
+
+.page-intro {
+    padding: 4rem 3rem 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--line);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.category {
+    padding: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--line);
+}
+
+.product-table th,
+.product-table td {
+    border: 1px solid var(--line);
+    padding: 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.product-table th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    text-align: left;
+    background-color: var(--surface);
+    width: 100px;
+}
+
+.product-table img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 5 / 6;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.compare {
+    padding: 1rem 3rem 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.compare table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--line);
+}
+
+.compare th,
+.compare td {
+    border: 1px solid var(--line);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.compare th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    background-color: var(--surface);
+}
+
+
+
+.size-section {
+    padding: 2.5rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.size-note {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    margin-bottom: 1rem;
+}
+
+.size-table-wrap {
+    overflow-x: auto;
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid var(--line);
+}
+
+.size-table th,
+.size-table td {
+    border: 1px solid var(--line);
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.size-table th {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    background-color: var(--surface);
+}
+
+.measure-steps {
+    padding: 2.5rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.measure-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.measure-list li {
+    border: 2px solid var(--line);
+    padding: 1.2rem;
+}
+
+.step-num {
+    display: block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    color: var(--text-soft);
+    margin-bottom: 0.4rem;
+}
+
+.declaration {
+    padding: 2.5rem 3rem 4rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.declaration-card {
+    position: relative;
+    border: 2px solid var(--line);
+    padding: 2rem;
+}
+
+.declaration-card p {
+    margin-bottom: 0.8rem;
+}
+
+.stamp {
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid var(--text);
+    margin-bottom: 1rem;
+}
+
+
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 3rem;
+    padding: 3rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.92rem;
+}
+
+.contact-list .label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--text-soft);
+}
+
+.hours-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    border: 2px solid var(--line);
+}
+
+.hours-table td {
+    border: 1px solid var(--line);
+    padding: 0.5rem 0.9rem;
+    font-size: 0.88rem;
+}
+
+.socials {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.socials a {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.contact-form {
+    border: 2px solid var(--line);
+    padding: 2rem;
+}
+
+.contact-form p {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.form-field {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-soft);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    font-family: 'Archivo', sans-serif;
+    font-size: 0.92rem;
+    padding: 0.7rem;
+    border: 1px solid var(--line);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+.form-field textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid var(--text);
+    outline-offset: 1px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.lookbook {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.look {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    border-bottom: 2px solid var(--line);
+    padding: 3rem 0;
+}
+
+.look.reverse {
+    direction: rtl;
+}
+
+.look.reverse > * {
+    direction: ltr;
+}
+
+.look-number {
+    grid-column: 1 / -1;
+    display: inline-block;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: var(--text-soft);
+    margin-bottom: 0.8rem;
+}
+
+.look-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    filter: grayscale(100%);
+}
+
+.look-caption {
+    position: relative;
+}
+
+.look-caption h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.look-caption p {
+    margin-top: 0.8rem;
 }
